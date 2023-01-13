@@ -30,3 +30,15 @@ Ahora vamos a mirar si vemos algún patrón que pueda indicarnos que diferencias
 Finalmente, hemos calculado la diferencia de puntos porcentuales de la métrica anterior entre la zona con mayor precio y menor. Hemos obtenido una diferencia de 1'7 puntos porcentuales en ambas variables, a favor de la zona con menor precio.
 
 ## C) Gov 10a exp page linear
+
+Finalmente, vamos a ver los diferentes indicadores utilizados para este tercer estudio. El primero de todos que se ha realizado es realizar un pequeño estudio sobre los datos para ver que es lo que podemos sacar de ellos, ya que a primera vista podemos ver algunas variables que parece que nos van a dar poca información. Para ello hemos hecho el sumatorio de los registros diferentes que hay en cada una de las variables. Con esto hemos concluido que solo nos interesará tratar con las variables *geo*, *TIME_PERIOD*, y *OBS_FLAG*.
+
+Vamos a empezar a trabajar con la variable *geo* que se refiere a la zona. Primero de todo vamos a obtener los registros únicos que tenemos y realizar una agrupación de esta para obtener información sobre el *OBS_VALUE*. La primera métrica que sacamos es el sumatorio de los *OBS_VALUE* para cada zona. Al final hemos visto que esta métrica no nos da mucha información sobre esta. Por esto hemos decidido sacar la media por zona.
+
+Una vez se ha sacado la media, se ha realizado una ordenación ascendente y obtenemos la zona con un valor mayor y menor. La que tiene un valor menor es 'IE' y con un valor mayor 'FR'.
+
+Ahora vamos a ver que tal el valor de la zona de España, abreviada como 'ES'. Con esto obtendemos la media del *OBS_VALUE* y vemos que tiene un valor de 44'8, un valor que se encuentra en medio entre la zona con mayor valor y con menor.
+
+A continuación vamos a empezar a trabajar con los años, *TIME_PERIOD*. Vamos a ver si hay algún tipo de relación entre el *TIME_PERIOD* y el *OBS_VALUE*. Primero de todo se ha ordenado por *OBS_VALUE* y se ha llegado a la conclusión que el valor menor es de 2019 y el mayor de 2013.
+
+Después se ha agrupado por año para ver cuales de los años han tenido una mayor repercusión en cuanto al valor del *OBS_VALUE*. Aquí se han calculado dos métricas sobre esta agrupación, la media y la desviación típica. LLegando a la conclusión que el mejor año en términos de *OBS_VALUE* es el 2021 con un valor de 51'13 de media y el peor el 2017 con una media de 43'35. El año con la desviación típica mayor es 2013.
