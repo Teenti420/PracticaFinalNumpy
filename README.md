@@ -2,4 +2,19 @@
 
 Alumno: Sebastià Vicens Oliver
 
+En esta práctica se ha estado trabajando sobre tres datasets distintos. Estos datasets debían ser tratados en python para intentar sacar varias conclusiones sobre los datos. Más en concreto se debía utilizar la librería Numpy para realizar el estudio.
+
+A continuación vamos a comentar los indicadores que se han sacado y los resultados obtenidos, así como las conclusiones que podemos sacar de estos.
+
+## A) Tabla de INEbase Balears
+### Illes por municipios y fenómeno demográfico . MNP Estadística de Defunciones
+
+En este primer caso, las métricas que se han intentado obtener son, primero de todo, las series de los *nacidos vivos por residencia materna*. En este caso, no hay mucho que explicar. En este caso hemos obtenido los registros *nacidos vivos por residencia materna* y hemos hecho el sumatorio de las muertes de cada municipio. De esta forma hemos obtenido un total de 9455 muertes. Después de eso se ha calculado la media de muertes de este tipo por municipio y esta ha sido de 141'12.
+
+A continuación, se ha trabajado con las series de los *fallecidos por el lugar de residencia*. Una vez filtrados los datos se han obtenido las mismas métricas que en el anterior caso, añadiendo además la desviación estándard. En este caso, la suma total asciende a 8559 y la media 127'75. Por tanto, vemos que en este caso ha disminuïdo un poco la cantidad de muertes en las Islas debido a este fenómeno.
+
+Con las series anteriores hemos seguido trabajando. Primero de todo, hemos realizado una ordenación ascendente, de la cual hemos podido obtener su ordenación descendente. Así, con el head hemos podido obtener los municipios con mayor y menor tasa de mortalidad según este fenómeno demográfico.
+
+Para terminar, hemos obtenido la media y la desviación típica de los cinco indicadores por municipio. Para ello hemos realizado la agrupación de los datos por fenómeno demográfico y, después, se han realizado las métricas. Si observamos un poco, vemos que los nacidos vivos por residencia materna son los que tienen una tasa de mortalidad más elevada, mientras que las muertes fetales por residencia materna lo que menor tasa tienen. En cuanto a la desviación estándard, el premio a la mayor y menor se lo llevan los mismos fenómenos demográficos.
+
 Es necesario comentar que he tenido que modificar el archivo data/Speculation_Watch_List.csv debido a que habia una columna de tipo string que tenía algunos registros de tipo string con comas. Por ejemplo, "ESTE ES UN, EJEMPLO". En estos casos, al leer el separador con las comas se perdia información. Por eso he modificado estas comas que se encontraban dentro de los strings a ';'.
